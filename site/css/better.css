@@ -1,0 +1,105 @@
+
+* {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box; /* Firefox, other Gecko */
+    box-sizing: border-box; /* Opera/IE 8+ */
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+@media (max-width: 800px) {
+    .rightbar, .content, .leftbar {
+        flex: 100%;
+    }
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    color: #66412B;
+}
+
+.header {
+    background: #8C5230;
+    color: #FFC29E;
+    width: 100%;
+    text-align: left;
+    padding: 10px 10px 10px 40px;
+    font-size: large;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.col {
+    flex: 1;
+    padding: 16px;
+}
+
+.leftbar {
+    background: #FFC29E;
+    padding: 5px 10px 10px;
+}
+
+.content {
+    background: #FFC29E;
+    flex-grow: 8;
+    text-align: justify;
+    padding: 5px 30px 10px 10px;
+}
+
+.rightbar {
+    text-align: center;
+    background-image: url("../img/pattern.jpg");
+    background-size: 100%;
+}
+
+.footer {
+    background: #F2B872;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.par {
+    text-align: center;
+}
+
+a {
+    color: #257372;
+}
+
+a:hover {
+    color: #63BFBF;
+    font-style: italic;
+}
+
+ol {
+    padding: 10px;
+}
+
+#addtext {
+    background: rgba(255, 194, 158, 0.7);
+    border-radius: 10px;
+}
+
+h1, h2, h3 {
+    font-family: "Times New Roman", serif;
+    padding: 0;
+    margin: 0;
+}
+
+ol {
+    margin: 0;
+}
+
+hr {
+    height: 2px;
+    border-width: 0;
+    color: gray;
+    background-color: #8C5230;
+}
+
+

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>
+        ToDO
+    </title>
+    <style>
+
+        th {
+            width: 200px;
+        }
+        th, td{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="content">
+
+    <table>
+        <tr>
+            <th>Kod:</th>
+            <th>Zadanie:</th>
+            <th>Termin:</th>
+            <th>Wyszukaj</th>
+        </tr>
+        <tr>
+            <td><input type="text" maxlength="3" id="kod_search" name="kod_search"></td>
+            <td><input type="text" minlength="3" maxlength="255" id="nazwa_search" name="nazwa_search"></td>
+            <td><input type="date" id="data_search" name="data_search"></td>
+            <td>
+                <button onclick="filterTasks()">ok</button>
+                <button onclick="resetSearch()">esc</button>
+            </td>
+        </tr>
+    </table>
+    <table id="table">
+        <tr>
+            <th>Kod:</th>
+            <th>Zadanie:</th>
+            <th>Termin:</th>
+            <th>Akcja:</th>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <th>Kod:</th>
+            <th>Zadanie:</th>
+            <th>Termin:</th>
+            <th>Dodaj</th>
+        </tr>
+        <tr>
+            <td><input type="text" maxlength="3" id="kod_insert" name="kod_insert"></td>
+            <td><input type="text" minlength="3" maxlength="255" id="nazwa_insert" name="nazwa_insert"></td>
+            <td><input type="date" id="data_insert" name="data_insert"></td>
+            <td>
+                <button onclick="insertIntoList()">ok</button>
+                <button onclick="resetInsert()">esc</button>
+            </td>
+        </tr>
+    </table>
+</div>
+</div>
+
+
+<script src="todo.js"></script>
+</body>
+
+</html>

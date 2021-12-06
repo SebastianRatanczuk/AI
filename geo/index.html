@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GeoPuzzle</title>
+    <style>
+        body {
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+
+        #map, #images {
+            height: 400px;
+            width: 400px;
+        }
+
+        #map, #images {
+            float: left;
+        }
+
+        #puzzleHolder {
+            height: 400px;
+            width: 800px;
+        }
+
+        .puzzle, .drag-target {
+            float: left;
+            height: 96px;
+            width: 96px;
+        }
+
+        .drag-target {
+            background: #eee;
+			border: 1px solid;
+        }
+
+        #alert {
+            width: 40%;
+            left: 50%;
+            transform: translate(-50%);
+            padding: 20px;
+            background-color: #ddd;
+            color: #000;
+            font-size: 1.2em;
+            opacity: 1;
+            transition: opacity 0.6s;
+            display: none;
+            position: absolute;
+        }
+        #alert span, #alert strong {
+            color: #000;
+        }
+        #alert span {
+            float: right;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""/>
+<body>
+<div id="alert">
+    <span onclick="hideAlert()">×</span>
+    <strong>Congratulations!</strong> You have made it!
+</div>
+<div>
+    <div id="map"></div>
+    <div id="images">
+        <div class="drag-target"></div>
+        <div class="drag-target"></div>
+        <div class="drag-target"></div>
+        <div class="drag-target"></div>
+        <div class="drag-target"></div>
+        <div class="drag-target"></div>
+        <div class="drag-target"></div>
+        <div class="drag-target"></div>
+        <div class="drag-target"></div>
+        <div class="drag-target"></div>
+        <div class="drag-target"></div>
+        <div class="drag-target"></div>
+        <div class="drag-target"></div>
+        <div class="drag-target"></div>
+        <div class="drag-target"></div>
+        <div class="drag-target"></div>
+    </div>
+</div>
+<button id="find-me">Get Current Location</button>
+<button id="get-image">Get Image</button>
+<br/>
+<a id="map-link" target="_blank"></a>
+<div id="puzzleHolder">
+
+</div>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+<script src="leaflet-image.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

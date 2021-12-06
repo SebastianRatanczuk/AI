@@ -1,0 +1,71 @@
+
+* {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box; /* Firefox, other Gecko */
+    box-sizing: border-box; /* Opera/IE 8+ */
+}
+
+@media (max-width: 800px) {
+    .rightbar, .content, .leftbar {
+        flex: 100%;
+    }
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    background: red;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.col {
+    flex: 1;
+    padding: 16px;
+}
+
+.leftbar {
+    background: rosybrown;
+    padding: 5px 10px 10px;
+}
+
+.content {
+    background: saddlebrown;
+    flex-grow: 7;
+    padding: 5px 30px 10px 10px;
+}
+
+.rightbar {
+    text-align: center;
+    background-image: url("../img/coffee_beans.jpg");
+    background-size: 100%;
+}
+
+.footer {
+    background: yellowgreen;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.par {
+    text-align: center;
+}
+
+h1, h2, h3 {
+    font-family: "Comic Sans MS";
+}
+
+#addtext {
+    background: teal;
+}
